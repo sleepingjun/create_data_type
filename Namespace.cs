@@ -35,6 +35,7 @@ namespace Biology
     }
 }
 
+//Constructors 建構方法 = special method/懶人創class大法
 namespace Furniture
 {
     class Chair
@@ -42,11 +43,30 @@ namespace Furniture
         public string Color;
         public string Material;
         public int Size;
+        public Chair(string color, string material, int size) //建構方法；沒有要回傳值 所以不用放void.int...
+        {
+            Color = color; //this.color = color; //如果叫一樣的話，可以+this代表這是屬性color
+            Material = material;
+            Size = size;
+        }
     }
     class Table
     {
         public string Color;
         public string Material;
         public int Size;
+
+        public Table() //可以不塞值，只在創建的時候執行下面指定的事
+        {
+            Console.WriteLine("A table is created.");
+        }
+    }
+    class Bed
+    {
+        public Bed(string aa)
+        {
+            Console.WriteLine($"A bed is created. {aa}");
+        }
+
     }
 }
