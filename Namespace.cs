@@ -1,5 +1,6 @@
 ﻿//namespace = 放模板的分類管理倉庫(?)/資料夾
 //來創個class模板， 然後回Program.cs創出來
+//class裡面可以定義methods(功能/function)跟properties(屬性值)
 
 namespace Biology
 {
@@ -10,6 +11,11 @@ namespace Biology
         public string Name;//public 屬性
         public int Age;
         public double Height;
+
+        public void Introduce() //public 方法 //void不回傳，如果要回傳要改成別的資料型態 int/double/string...
+        {
+            Console.WriteLine($"Hi! My name is {Name}, I am {Age} years old and {Height} meters tall. Nice to meet you~");
+        }
     }
 
     class Cat
