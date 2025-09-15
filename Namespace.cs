@@ -26,7 +26,9 @@ namespace Biology
         public double Weight;
     }
 
-    class Dog
+    class Dog 
+    //如果寫成 Dog : Cat 就是繼承Cat的屬性，Cat有的Name. Color,Age,Weight屬性，Dog也會有
+    //方法也可以繼承過去直接用
     {
         public string Name;
         public string Color;
